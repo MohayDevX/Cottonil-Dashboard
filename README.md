@@ -1,7 +1,7 @@
 # Cottonil - Power BI Dashboard | تحليل مبيعات قطونيل
 
-End-to-End Power BI Dashboard for Cottonil - Built from raw, messy Excel files to a fully interactive executive dashboard with 8 pages, 20+ 【entity-DAX¦canonical_name=DAX】 measures, and automated insights.
-
+End-to-End Power BI Dashboard for Cottonil - Built from raw, messy Excel files to a fully interactive executive dashboard with 8 pages,20+ D-A-X measures, and automated insights.
+Rebuilt Dim_Date with D-A-X CALENDAR
 ## Business Problem
 Cottonil had sales, purchases, inventory and discount data scattered in 5+ Excel files with no single source of truth:
 - Sales dates (2020) didn't match Date dimension (2024-2025) - All visuals showed (Blank)
@@ -12,7 +12,7 @@ Cottonil had sales, purchases, inventory and discount data scattered in 5+ Excel
 ## What I Built and Fixed
 
 ### 1. Data Modeling and Power Query
-- Rebuilt Dim_Date with 【entity-DAX¦canonical_name=DAX】 CALENDAR(2020 to TODAY()) to fix (Blank) issue
+- Rebuilt Dim_Date with D-A-X CALENDAR(2020 to TODAY()) to fix (Blank) issue
 - Created Star Schema: DIM_Product - fact_Mبيعات - Fact_Gap - Dim_Date, Dim_Supplier - Fact_Purchases, DIM_Product - Fact_Inventory
 - Fixed Many-to-Many relationship fact_Mبيعات[رقم الاذن] - Fact_Gap[رقم الاذن] with Both cross-filter to enable Discount analysis
 - Cleaned المقاس النهائي - Removed بدون مقاس (5K units) that was skewing Size analysis
